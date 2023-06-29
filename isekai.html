@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <!---Google Import Fonts---->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+        <title>Isekai Mad Lib</title>
+
+        <link rel="stylesheet" href="isekai.css">
+    </head>
+    <body>
+    	
+    	<div class="container">
+    	<header id="intro" class="center">
+    		<h2>Isekai-Inspired Mad Libs</h2>
+ 
+    		<p>Have you ever been watching an anime and thought "no way, that plot would never happen"? Well, look no further. Step up and see where Truck-kun would take <em>you</em>!</p>
+    	</header>
+
+    	<main>
+    		<form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+    			<section id="madlibs-inputs">
+    				<div class="input-group">
+    					<label for="job">(deadend) job</label>
+    					<input type="text" id="job" name="job" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="criminal">criminal</label>
+    					<input type="text" id="criminal" name="criminal" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="verb1">(violent) verb</label>
+    					<input type="text" id="verb1" name="verb1" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="creature1">creature</label>
+    					<input type="text" id="creature1" name="creature1" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="power">magical power</label>
+    					<input type="text" id="power" name="power" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="power2">2nd magical power</label>
+    					<input type="text" id="power2" name="power2" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="name">name</label>
+    					<input type="text" id="name" name="name" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="creature2">2nd creature</label>
+    					<input type="text" id="creature2" name="creature2" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="activity">(abnormal) activity</label>
+    					<input type="text" id="activty" name="activity" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="items">items</label>
+    					<input type="text" id="items" name="items" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="power3">3rd magical power</label>
+    					<input type="text" id="power3" name="power3" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="creature3">3rd creature</label>
+    					<input type="text" id="creature3" name="creature3" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="noun">noun</label>
+    					<input type="text" id="noun" name="noun" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="name2">another name</label>
+    					<input type="text" id="name2" name="name2" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="verb2">2nd (violent) verb</label>
+    					<input type="text" id="verb2" name="verb2" required>
+    				</div>
+
+    				<div class="input-group">
+    					<label for="game">game</label>
+    					<input type="text" id="game" name="game" required>
+    				</div>
+    			</section>
+
+
+
+
+
+    			<section id="madlibs-submit">
+    				<button type="submit">Generate</button>
+    			</section>
+    		</form>
+
+    		<section id="completed-story" class="hide"></section>
+    	</main>
+
+    	</div>
+
+
+        
+      <script src="isekai.js"></script>
+    </body>
+</html>
