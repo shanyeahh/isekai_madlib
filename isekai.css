@@ -1,0 +1,126 @@
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow-y: hidden;
+	background-color: #118ab2;
+	background-image: linear-gradient(319deg, #118ab2 0%, #06d6a0 37%, #ffd166 100%);
+	background-attachment: fixed;
+	font-family: 'Cardo', serif;
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	background-color: rgb(242, 242, 242, 0.6);
+	padding: 20px 0;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	min-width: 60vh;
+	max-width: 70vh;
+	min-height: 60vh;
+	max-height: 90vh;
+	margin: 0 auto;
+	align-items: center;
+	overflow-y: auto hidden;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+#intro{
+    padding: 0 5%;
+}
+
+form section {
+	padding: 0 5%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 5px;
+}
+
+.input-group label {
+	padding-left: 1px;
+}
+
+.input-group input[type="text"] {
+	height: 20px;
+	width: 150px;
+	border: 1px solid ;
+	border-radius: 20px;
+	box-shadow: black;
+	padding-left: 1px;
+	margin: 3px 0 1px;
+}
+
+.center{
+    text-align: center;
+}
+
+.hide {
+	display:none;
+
+}
+
+#completed.story {
+	padding: 10 5%;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2;
+}
+
+.inserted-text {
+	border-bottom: 1px solid #3F1263;
+	font-weight: 700;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+#madlibs-submit button,
+#madlibs-reset {
+	height: 25px;
+	width: 150px;
+	background-color: #ffd166;
+	text-transform: uppercase;
+	border-radius: 20px;
+	border: none;
+	padding: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	font-weight: 700;
+	font-family: 'Cardo', serif;
+
+}
+
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 1em;
+        margin-top: 5px;
+    }
+    .container{
+        max-width: 100%;
+        max-height: 85vh;
+    }
+
+    .input-group {
+        margin: 5px;
+    }
+
+    #completed-story{
+        font-size: .75em;
+    }
+}
